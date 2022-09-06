@@ -9,7 +9,16 @@ As you proceed in your career as a web developer, you will probably be asked to 
 ```
 AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+SO THAT I can gauge my progress compared to my peers.
+
+---------  Things I'll need to incorporate  -----------
+1) a timer
+2) score calc
+3) listeners
+4) array/hash of questions/mult choices
+5) functions with loops, conditions
+6) input text box
+-------------------------------------------------------
 ```
 
 ## Acceptance Criteria
@@ -29,7 +38,9 @@ THEN I can save my initials and score
 ```
 
 The following animation demonstrates the application functionality:
-
-![Demonstration of the Coding Quiz Challenge.](./assets/pics/04-web-apis-homework-demo.gif)
+![Example Demo of Quiz](./assets/pics/04-web-apis-homework-demo.gif)
 
 ### Review
+
+* The URL of the functional, deployed application.
+* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
