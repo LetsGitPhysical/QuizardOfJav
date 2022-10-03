@@ -23,6 +23,11 @@ header{
 #viewScore{
     float:left;
     text-align:left;
+    cursor: pointer;
+    /* border: 2px solid rgb(255,0,0); */
+}
+#viewScore:hover{
+    background-color:#5fe0d5;
     /* border: 2px solid rgb(255,0,0); */
 }
 #counter{
@@ -38,7 +43,12 @@ header{
     /* border: 2px solid rgb(255,0,0); */
 }
 
-/* ".complete-board" */
+#hall-and-oates{
+    display:block;
+    margin: 10px auto 10px auto;
+    width: 300px;
+
+}
 ul{
     margin: 5px 3% 80px 3%;
     padding: 5px 50px 80px 0px; 
@@ -47,7 +57,8 @@ ul{
     border-radius: 4px;
 }
 
-ul.q-buttons{
+#q-buttons{
+    display:block;
     margin: 5px 3% 80px 3%;
     padding: 5px 50px 80px 0px; 
     list-style-type: none;
@@ -59,8 +70,8 @@ ul.q-buttons{
     display: block;
     text-align: left;
     width:fit-content;
-    max-width: 400px;
-    min-width: 120px;
+    /* max-width: 400px; */
+    width: 250px;
     height: 40px;
     color: white; 
     padding: 6px 10px 6px 5px; 
@@ -99,21 +110,7 @@ ul.q-buttons{
     background-color: transparent;
 }
 
-/* .add-your-initials{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left:auto;
-    margin-right: auto;
-}
-input {
-    display: block;
-    align-items: center;
-    width: 70px;
-    justify-content: center;
-    margin-left:auto;
-    margin-right: auto;
-} */
+
 
 #send-initials{
     display: block;
@@ -189,7 +186,19 @@ textarea{
 #game-yes-no{
     display: block;
 }
-
+#exit-scoreboard-button{
+    float:inline-end;
+    color:rgb(255, 25, 198);
+    background-color:#eec8ff;
+    text-align: center;
+    padding: 2px;
+    height: 30px;
+    width: 150px;
+    margin: 50px auto 20px auto;
+    border: 1px solid rgb(255,0,0);
+    border-radius: 4px;
+    cursor: pointer;
+}
 /* .container .btn {
     position: absolute;
     top: 50%;
