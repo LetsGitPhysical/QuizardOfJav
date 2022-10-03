@@ -84,11 +84,11 @@ function takeQuiz(q){
 }
 //------------------------------------------------------------------------------
 
-var timeLeft = 4 * quiz_count;
+var timeLeft = 3 * quiz_count;
 
 function startTimer() {
   viewScore.textContent = vhiDef;
-  timeLeft = 4 * quiz_count;
+  timeLeft = 3 * quiz_count;
   var timeInterval = setInterval(function () { //--- setInterval(function() {..if-else,clearInterval()..},1000) 
     timeLeft--;
     if (timeLeft > 1 && qNum > quiz_count) {
