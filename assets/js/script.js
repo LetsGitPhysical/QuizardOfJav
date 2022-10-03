@@ -26,16 +26,16 @@ var qContain = document.querySelector('.container');
 var quizIntro = 'Will you be "Out of Touch?" or "Out of Time?" with this Quiz. Let\'s find out!';
 quizHeader.textContent = quizIntro;
 let quizard = { 
-  q1  : {Quest : 'Which box-sizing method includes total width and height?',              Choice : ['bird-box','border-box','boom-bastic','box-it-up'],                     Answer : 'border-box'},
-  q2  : {Quest : 'Which of these properties is used to count the elements of an object?', Choice : ['foot','meter','ruler','length'],                                       Answer : 'length'},
-  q3  : {Quest : 'Which of these character strings enclose as array in JavaScript?',      Choice : ['[ ]','( )','{ }','+ +'],                                               Answer : '[ ]'},
-  q4  : {Quest : 'What would you use to print the result in the console section?',        Choice : ['console.listen()','console.branch()','console.log()','debug.print()'], Answer : 'console.log()'},
-  q5  : {Quest : 'In both Movies Top-Gun 1 & 2, Who was the Best Pilot?',                 Choice : ['Goose','Maverick','Viper','Ice-Man'],                                  Answer : 'Ice-Man'},
-  q6  : {Quest : 'Which is not a function you can not apply to an array',                 Choice : ['shift','push','smash','pop'],                                          Answer : 'smash'},
-  q7  : {Quest : 'if var x = 5 and var x = 50 in same scope, what is x?',                 Choice : ['5','50','55','125'],                                                   Answer : '50'},
-  q8  : {Quest : 'if let x = 5 and let x = 50 in same scope, what is x?',                 Choice : ['5','50','55','125'],                                                   Answer : '5'},
-  q9  : {Quest : 'difference between id and class in HTML?',                              Choice : ['id is unique','class has students','drive w/ drive to','all?..'],      Answer : 'id is unique'},
-  q10 : {Quest : 'which these methods in javascript is used for a unique element',        Choice : ['justFindItWillYa','setElegantByMe','getRelevantId','getElementById'],  Answer : 'getElementById'}
+  q1  : {Quest : 'Which box-sizing method includes total width and height?',              Choice : ['bird-box','border-box','boom-bastic','box-it-up'],                       Answer : 'border-box'},
+  q2  : {Quest : 'Which of these properties is used to count the elements of an object?', Choice : ['foot','meter','ruler','length'],                                         Answer : 'length'},
+  q3  : {Quest : 'Which of these character strings enclose as array in JavaScript?',      Choice : ['[ ]','( )','{ }','+ +'],                                                 Answer : '[ ]'},
+  q4  : {Quest : 'What would you use to print the result in the console section?',        Choice : ['console.listen()','console.branch()','console.log()','debug.print()'],   Answer : 'console.log()'},
+  q5  : {Quest : 'In both Movies Top-Gun 1 & 2, Who was the Best Pilot?',                 Choice : ['Goose','Maverick','Viper','Ice-Man'],                                    Answer : 'Ice-Man'},
+  q6  : {Quest : 'Which is not a function you can not apply to an array',                 Choice : ['shift','push','smash','pop'],                                            Answer : 'smash'},
+  q7  : {Quest : 'if var x = 5 and var x = 50 in same scope, what is x?',                 Choice : ['5','50','55','125'],                                                     Answer : '50'},
+  q8  : {Quest : 'if let x = 5 and let x = 50 in same scope, what is x?',                 Choice : ['5','50','55','125'],                                                     Answer : '5'},
+  q9  : {Quest : 'difference between id and class in HTML?',                              Choice : ['id is unique','class has students','drive w/ drive to','all the above?'],Answer : 'id is unique'},
+  q10 : {Quest : 'which these methods in javascript is used for a unique element',        Choice : ['justFindItWillYa','setElegantByMe','getRelevantId','getElementById'],    Answer : 'getElementById'}
 }
 var scoreBoardDict = {};  // collect from each game played 
 //--------------------------------               q1,q2,q3..
