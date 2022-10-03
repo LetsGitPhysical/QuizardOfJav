@@ -17,7 +17,13 @@ SO THAT I can gauge my progress compared to my peers.
 3) listeners
 4) array/hash of questions/mult choices
 5) functions with loops, conditions
-6) input text box
+6) input text box - must have text entered to submit player name/initials
+7) update highscores if you keep re-playing, scoreboard updated only when new initials are entered
+8) have a ranking system, when there's a tie score use time remaining 
+    to attain same score ie - 3 players score 80 but one had 15 secs remaining others had 10 secs remaining
+9) when you no longer want to play, whole system resets all records and starts new
+10) 10 questions - 5 seconds alotted per question, 10 second penalty for Any wrong answer
+
 -------------------------------------------------------
 ```
 

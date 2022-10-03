@@ -67,6 +67,8 @@ var gameCnter = 1;
 //------------------------------------------------------------------------------
 function takeQuiz(q){
   qNum = q+1;
+  document.body.style.backgroundImage = "url('./assets/pics/hall-oates-" + qNum +".jpg'),linear-gradient(180deg, rgba(255,255,255,.6) 0%, rgba(255,255,255,.6) 100%)";
+  document.body.style.backgroundSize = 'cover';
   resultQuiz.textContent = '';
   console.log('takeQuiz Function',qNum,quiz_count);
   if(qNum <= quiz_count){
@@ -84,17 +86,17 @@ function takeQuiz(q){
 }
 //------------------------------------------------------------------------------
 
-var timeLeft = 3 * quiz_count;
+var timeLeft = 5 * quiz_count;
 
 function startTimer() {
   viewScore.textContent = vhiDef;
-  timeLeft = 3 * quiz_count;
+  timeLeft = 5 * quiz_count;
   var timeInterval = setInterval(function () { //--- setInterval(function() {..if-else,clearInterval()..},1000) 
     timeLeft--;
     if (timeLeft > 1 && qNum > quiz_count) {
       countDown.textContent = "You Finished with "+ timeLeft + " Seconds Left!!";
       clearInterval(timeInterval);            //--- clearInterval()` to stop the timer
-    } else if(timeLeft === 0){
+    } else if(timeLeft <= 0){
       countDown.textContent = "Time Ran Out!!";
       clearInterval(timeInterval);             //--- clearInterval()` to stop the timer 
       gameOver();
@@ -164,7 +166,8 @@ qChoiceBox.addEventListener("click", function(event) {
       takeQuiz(qCntr);
     } else {
     if (quizA !== choiceTxt){
-      resultQuiz.textContent = 'Wrong!';
+      resultQuiz.textContent = 'Wrong! Minus 15 secs Penalty!';
+      timeLeft -= 15;
       if (hasKey === false){ scoreDict[qky]=0 }
       }
 
@@ -309,6 +312,8 @@ function playAgain(t){
 
 
 function resetGame(){
+  document.body.style.backgroundImage = "url('./assets/pics/hall-oates-begin.jpg'),linear-gradient(180deg, rgba(255,255,255,.6) 0%, rgba(255,255,255,.6) 100%)";
+  document.body.style.backgroundSize = 'cover';
   viewScore.textContent = '';
   countDown.textContent = '';
   quizHeader.textContent = quizIntro;
