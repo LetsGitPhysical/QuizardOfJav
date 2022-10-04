@@ -68,7 +68,8 @@ var gameCnter = 1;
 function takeQuiz(q){
   qNum = q+1;
   document.body.style.backgroundImage = "url('./assets/pics/hall-oates-" + qNum +".jpg'),linear-gradient(180deg, rgba(255,255,255,.6) 0%, rgba(255,255,255,.6) 100%)";
-  document.body.style.backgroundSize = 'cover';
+  document.body.style.backgroundSize = 'contain';
+
   resultQuiz.textContent = '';
   console.log('takeQuiz Function',qNum,quiz_count);
   if(qNum <= quiz_count){
@@ -313,7 +314,8 @@ function playAgain(t){
 
 function resetGame(){
   document.body.style.backgroundImage = "url('./assets/pics/hall-oates-begin.jpg'),linear-gradient(180deg, rgba(255,255,255,.6) 0%, rgba(255,255,255,.6) 100%)";
-  document.body.style.backgroundSize = 'cover';
+  document.body.style.backgroundSize = 'contain';
+  document.body.style.backgroundColor = 'rgba(185,112,58,.25)';
   viewScore.textContent = '';
   countDown.textContent = '';
   quizHeader.textContent = quizIntro;
